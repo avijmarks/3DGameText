@@ -7,6 +7,7 @@ public class GameText: MonoBehaviour {
     [SerializeField]
     GameTextCharacter[] listOfCharacters_Initializer;
 
+    public GameTextCharacter[] characterArray;
     
     Dictionary<char, GameTextCharacter> characters = new Dictionary<char, GameTextCharacter>();
 
