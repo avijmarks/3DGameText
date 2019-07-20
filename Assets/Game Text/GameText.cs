@@ -95,7 +95,7 @@ public class GameText: MonoBehaviour {
     //creates a dictionary for us of alphabet prefabs and characters by accessing each index of prefab array and finding out its string character variable
     void Awake()
     {
-        
+        //singletoning
         if (generator == null)
         {
             generator = this; 
@@ -104,7 +104,7 @@ public class GameText: MonoBehaviour {
             //destroy this instance text here.
         }
 
-        GameTextCharacter[] initializer = InitialArray();
+        GameTextCharacter[] initializer = characterArray;
         for (int i = 0; i < initializer.Length; i++)
         {
             characters.Add(initializer[i].characterID, initializer[i]);
